@@ -11,7 +11,7 @@ class HetznerK3s < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Darwin_arm64.tar.gz"
-      sha256 "23e01cd0a9aafaa7d53814959665f33dc9cd8780d6a55f04905704cd1f8784e5"
+      sha256 "a81d7a7b415697c60e27afa5ea175c71d4c6bcaab9f417693b98e2bfa1a43cc3"
 
       def install
         bin.install "hetzner-k3s"
@@ -19,7 +19,7 @@ class HetznerK3s < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Darwin_x86_64.tar.gz"
-      sha256 "83035fa7c2ffcd84ec77ee2b5abf781786da2c2d634a18ae4913f21aaa5f957d"
+      sha256 "53d008679ddf20df5c651d0d2fada2d24526da05f939249d7198f3f0cb7b0764"
 
       def install
         bin.install "hetzner-k3s"
@@ -30,7 +30,7 @@ class HetznerK3s < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Linux_aarch64.tar.gz"
-      sha256 "79e4983216ad81fa992d960e23efdb4b08ade50cd08428fada53467cd5abdc88"
+      sha256 "5e476eda8f7f5d7dc394e18d9d1ae6a02d00cf23577b15bfcbb5123333d31d83"
 
       def install
         bin.install "hetzner-k3s"
@@ -38,7 +38,7 @@ class HetznerK3s < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Linux_x86_64.tar.gz"
-      sha256 "dbe21df5f5a6abc1e1927c543252d40eef4dd7273f1da9f6dbcd17d07502a699"
+      sha256 "c48fe56bdbc7cc641ee388267b5d0abb42a88b5649785f6e52df38b362ff6d53"
 
       def install
         bin.install "hetzner-k3s"
