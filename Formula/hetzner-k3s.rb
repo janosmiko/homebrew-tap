@@ -5,21 +5,21 @@
 class HetznerK3s < Formula
   desc "This is a CLI tool to quickly create and manage Kubernetes clusters in Hetzner Cloud using the lightweight Kubernetes distribution k3s from Rancher."
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Darwin_arm64.tar.gz"
-      sha256 "6df9a6d9a5708d2f403856c4acc3ea8b03116248da4b89b0fa75ecd004e14c34"
+      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.1/hetzner-k3s_Darwin_arm64.tar.gz"
+      sha256 "4227ff781953b5644e4c5fbb44fd08dd67424852f865d825b8a03fd1d03dbbfa"
 
       def install
         bin.install "hetzner-k3s"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Darwin_x86_64.tar.gz"
-      sha256 "53fddc734da76519ef9c3f9cb32f534a599d55e815ee93e509a0191e4e0361df"
+      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.1/hetzner-k3s_Darwin_x86_64.tar.gz"
+      sha256 "102b06cb6627bfc0f51ef2b1a2b725206ddcfc426e7edf73302ca35fb227fd7a"
 
       def install
         bin.install "hetzner-k3s"
@@ -29,16 +29,16 @@ class HetznerK3s < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Linux_aarch64.tar.gz"
-      sha256 "41229bf3695287f6eed2cff3a4d4fa6965c75eadb16e637c19c0fac13e5f0ff0"
+      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.1/hetzner-k3s_Linux_aarch64.tar.gz"
+      sha256 "2b36fd2ccdc0bec493b9eda0da8741c16a5914cf5258859a97ec62569a26d4f1"
 
       def install
         bin.install "hetzner-k3s"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.0/hetzner-k3s_Linux_x86_64.tar.gz"
-      sha256 "8293862c57ba6738104762eef6632cf787d3a4c1dbd23fc93dc717ecd83ebb6b"
+      url "https://github.com/janosmiko/hetzner-k3s/releases/download/v0.1.1/hetzner-k3s_Linux_x86_64.tar.gz"
+      sha256 "3b53201597d15b7b68065a296d0de45d69e8347b7cb3a9ed299bd853f655f54f"
 
       def install
         bin.install "hetzner-k3s"
