@@ -11,7 +11,7 @@ class Vau < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/janosmiko/vau/releases/download/v0.6.5/vau_0.6.5_darwin_amd64.zip"
-      sha256 "b00c7bb2c3aef945315ad15bd5efe77897c9799ebfcc547aae23289bee600cf7"
+      sha256 "2c88ceb22ec2033edbc1815e73438838925fc254fe5bf06f3c56a0296ff8a4a3"
 
       define_method(:install) do
         bin.install "vau"
@@ -19,7 +19,7 @@ class Vau < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/janosmiko/vau/releases/download/v0.6.5/vau_0.6.5_darwin_arm64.zip"
-      sha256 "259d8f867826104af88bcef4dd435a6280bb6ea04419675ee9e0f2ee5bb8bad8"
+      sha256 "dc1025893502c69b5d38ae8893adc66ab64b76cb15eb6b72c3680b04f49e9470"
 
       define_method(:install) do
         bin.install "vau"
@@ -30,14 +30,14 @@ class Vau < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/vau/releases/download/v0.6.5/vau_0.6.5_linux_amd64.tar.gz"
-      sha256 "13429374a176202072c415cfb2432c4769554f6fcc305735ee249d9a90beaaed"
+      sha256 "a2749b77509c0d258918e2d0fbda01feafb8d8b580ccb0203bd966270e6e9ee9"
       define_method(:install) do
         bin.install "vau"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/vau/releases/download/v0.6.5/vau_0.6.5_linux_arm64.tar.gz"
-      sha256 "118d65958790814934cd17f0534d63aa4bb8e911e785fc1e6951e8e88e43c9cc"
+      sha256 "0d4b1ac27c74f6ae8aa7f93b796888f8c9cfd5564e9e8eadf6669ac311995b1d"
       define_method(:install) do
         bin.install "vau"
       end
