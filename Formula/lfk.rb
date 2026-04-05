@@ -5,7 +5,7 @@
 class Lfk < Formula
   desc "Lightning Fast Kubernetes navigator - keyboard-focused TUI for managing K8s clusters"
   homepage "https://github.com/janosmiko/lfk"
-  version "0.8.17"
+  version "0.8.18"
   license "MIT"
 
   depends_on "helm" => :optional
@@ -13,16 +13,16 @@ class Lfk < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.8.17/lfk_0.8.17_darwin_amd64.zip"
-      sha256 "924d464f7cf10f776cf14e444fb5915e3faa08f201992ca52da35d0099450ac6"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.8.18/lfk_0.8.18_darwin_amd64.zip"
+      sha256 "f50463bb2d544eab50d45bebefbbc7eae751e307f2f9d9b8bf42d1b9ce44d137"
 
       define_method(:install) do
         bin.install "lfk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.8.17/lfk_0.8.17_darwin_arm64.zip"
-      sha256 "be54038c8f5992d77050f23b5b67f028d7e264ed066d88fac1f67efe01f579b1"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.8.18/lfk_0.8.18_darwin_arm64.zip"
+      sha256 "4f3ebcdc4c2b188e6d355e0d9712635abfb49813535137832829bfb79166450e"
 
       define_method(:install) do
         bin.install "lfk"
@@ -32,15 +32,15 @@ class Lfk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.8.17/lfk_0.8.17_linux_amd64.tar.gz"
-      sha256 "5fe886adf9121752ea2c40401a5ea34e3102bac8615acde45b600c12c837d4f0"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.8.18/lfk_0.8.18_linux_amd64.tar.gz"
+      sha256 "2c2a45e3abfa60ae34f181656eadef7519619f6c074ca727495a2270f8a70e02"
       define_method(:install) do
         bin.install "lfk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.8.17/lfk_0.8.17_linux_arm64.tar.gz"
-      sha256 "a83110833f37398701716a7c919548bea9647ebb07bb8eba78327556a680be01"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.8.18/lfk_0.8.18_linux_arm64.tar.gz"
+      sha256 "10fefecf927d29b2ce6874de4a3dc39888af9dfab700c6fd784acec99544342a"
       define_method(:install) do
         bin.install "lfk"
       end
