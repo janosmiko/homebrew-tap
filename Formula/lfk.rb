@@ -14,7 +14,7 @@ class Lfk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/janosmiko/lfk/releases/download/v0.9.0/lfk_0.9.0_darwin_amd64.zip"
-      sha256 "51d32adc0d4a9cfb3be7bd7ba8358438b7fd96327ce037335605cb7ddbeb6da6"
+      sha256 "d131ce8bfba06c20a7b00fc394a022e294ef39c43017fd7030052ad3482ba794"
 
       define_method(:install) do
         bin.install "lfk"
@@ -22,7 +22,7 @@ class Lfk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/janosmiko/lfk/releases/download/v0.9.0/lfk_0.9.0_darwin_arm64.zip"
-      sha256 "70e69b7ce7f3eba7a549706f7ac4468e44de23ee64c95ea0c1a8fcabc3366cc1"
+      sha256 "849751cae409aaf110590c55dde391f17084c34c4a76a8ba5a510bbfa30eb032"
 
       define_method(:install) do
         bin.install "lfk"
@@ -33,14 +33,14 @@ class Lfk < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/lfk/releases/download/v0.9.0/lfk_0.9.0_linux_amd64.tar.gz"
-      sha256 "380f50b0ebf147fe444a80448dab32b04969d440392ed91761c259ff9df742d2"
+      sha256 "7fbcb6c8f4be730032d5fc846e176855941ed459335a9b71d3d15fb4f8b46c7c"
       define_method(:install) do
         bin.install "lfk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/lfk/releases/download/v0.9.0/lfk_0.9.0_linux_arm64.tar.gz"
-      sha256 "24f1003aa85c2b7da8e8bafd9d25c8d289daa613343af4d8838010be28eab038"
+      sha256 "1944fae9aefb1c579c3ee8ebc68f478b6f7b3d127bcac1d7b9a4d19bd85dd6a8"
       define_method(:install) do
         bin.install "lfk"
       end
