@@ -14,7 +14,7 @@ class LfkNightly < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.20260416/lfk_0.10.0-nightly.20260416_darwin_amd64.zip"
-      sha256 "635b64168ba431c02a47d9d1b2c5e4c6d3ab64c31e629ab88cebe2923849fc5c"
+      sha256 "9bd2d3f7e0b52f8f1a0db494a7c463333b93d4e08bf191c47d21b7b6e3ddc597"
 
       define_method(:install) do
         bin.install "lfk"
@@ -22,7 +22,7 @@ class LfkNightly < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.20260416/lfk_0.10.0-nightly.20260416_darwin_arm64.zip"
-      sha256 "f8e1c219d0af67315e80675819d5c252902dd277e498f5a4fcc2d54e813563e4"
+      sha256 "ebc5f385b51873e1e8f7b989c064ad2b1b5af5e9f9ff5671cf4a3aec48afc5e6"
 
       define_method(:install) do
         bin.install "lfk"
@@ -33,14 +33,14 @@ class LfkNightly < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.20260416/lfk_0.10.0-nightly.20260416_linux_amd64.tar.gz"
-      sha256 "85c8df757ef03a06572601c01d63dc3027ba05edb6b430c7f6e795b1a0d1347f"
+      sha256 "dafaec81471790553f2d9629fb0220d9c7e318919660ce66d29172edb366d917"
       define_method(:install) do
         bin.install "lfk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.20260416/lfk_0.10.0-nightly.20260416_linux_arm64.tar.gz"
-      sha256 "6c939fc91ff911e6e1ad288db21744cdf809cc5483415eef45ca322fd9573bac"
+      sha256 "99c9bdbbc1e2538655fba350aee5a57a12c512bf342cc5cf4ee1d9521913c3cc"
       define_method(:install) do
         bin.install "lfk"
       end
