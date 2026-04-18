@@ -5,7 +5,7 @@
 class LfkNightly < Formula
   desc "Lightning Fast Kubernetes navigator (nightly) - keyboard-focused TUI for managing K8s clusters"
   homepage "https://github.com/janosmiko/lfk"
-  version "0.10.0-nightly.202604161536"
+  version "0.10.0-nightly.202604172256"
   license "MIT"
 
   depends_on "helm" => :optional
@@ -13,16 +13,16 @@ class LfkNightly < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604161536/lfk_0.10.0-nightly.202604161536_darwin_amd64.zip"
-      sha256 "298b366a498577a65ab85577efc9a994634ebc73b29d04bfb4e185eb4d81f881"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604172256/lfk_0.10.0-nightly.202604172256_darwin_amd64.zip"
+      sha256 "0da18c08a7220eab108e19b51694f51709e0a74eaf0b224f7dd9e68beff1fc5c"
 
       define_method(:install) do
         bin.install "lfk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604161536/lfk_0.10.0-nightly.202604161536_darwin_arm64.zip"
-      sha256 "400b29cbf79d03184ba90380c3b69eca5ea1798d10783ca189a2a82ccbaa720d"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604172256/lfk_0.10.0-nightly.202604172256_darwin_arm64.zip"
+      sha256 "78ec3a4f87c35f9f1b41178144e8033bb232bdca9b75148e50bd37b64545a050"
 
       define_method(:install) do
         bin.install "lfk"
@@ -32,15 +32,15 @@ class LfkNightly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604161536/lfk_0.10.0-nightly.202604161536_linux_amd64.tar.gz"
-      sha256 "b43cbc688e9f7b58e03ed88d57d751c5550f3f8b1ddac87db0da41792b8635f4"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604172256/lfk_0.10.0-nightly.202604172256_linux_amd64.tar.gz"
+      sha256 "e4927cc7475c9d01e65cc038776cf62c33586a0a1ac1156dcb1afad18e1fb54d"
       define_method(:install) do
         bin.install "lfk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604161536/lfk_0.10.0-nightly.202604161536_linux_arm64.tar.gz"
-      sha256 "07a521c93642eded854f07ca193c3c702faad936cfc179c947528720112cf5ad"
+      url "https://github.com/janosmiko/lfk/releases/download/v0.10.0-nightly.202604172256/lfk_0.10.0-nightly.202604172256_linux_arm64.tar.gz"
+      sha256 "05835888082ef76bb7a0979c43d1de0a45886c34a5fce522b8be3d4086b86b2a"
       define_method(:install) do
         bin.install "lfk"
       end
