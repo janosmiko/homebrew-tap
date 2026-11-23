@@ -5,21 +5,21 @@
 class Vau < Formula
   desc "A terminal UI for browsing HashiCorp Vault"
   homepage "https://github.com/janosmiko/vau"
-  version "0.7.2"
+  version "0.7.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/janosmiko/vau/releases/download/v0.7.2/vau_0.7.2_darwin_amd64.zip"
-      sha256 "3cd8899a171c977897ee4f0c22a0b34095325a9a9f0c932d4711c139abcfafca"
+      url "https://github.com/janosmiko/vau/releases/download/v0.7.4/vau_0.7.4_darwin_amd64.zip"
+      sha256 "ec4f35e8c9a9c18becc70a3755e6431d68afdb7e930ca565746cea7c924f3598"
 
       define_method(:install) do
         bin.install "vau"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/janosmiko/vau/releases/download/v0.7.2/vau_0.7.2_darwin_arm64.zip"
-      sha256 "52b35003e7a9a5a076999b565499a6da2f89cff8e80f27c7a42bfc4c84117ee4"
+      url "https://github.com/janosmiko/vau/releases/download/v0.7.4/vau_0.7.4_darwin_arm64.zip"
+      sha256 "42eaf1d9fbbf7f0342a42b3b60ec8c31ec8c61890382fea43ac04d2b4dad1dcd"
 
       define_method(:install) do
         bin.install "vau"
@@ -29,15 +29,15 @@ class Vau < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/vau/releases/download/v0.7.2/vau_0.7.2_linux_amd64.tar.gz"
-      sha256 "cb22605148b15ac0ed3973461b701949b22cdf4e9f5a16490c3638c3205026eb"
+      url "https://github.com/janosmiko/vau/releases/download/v0.7.4/vau_0.7.4_linux_amd64.tar.gz"
+      sha256 "0a2c848e54807c77696f7eca70d13cc41ebac592b2233fb44587404687627e43"
       define_method(:install) do
         bin.install "vau"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janosmiko/vau/releases/download/v0.7.2/vau_0.7.2_linux_arm64.tar.gz"
-      sha256 "eb280ec0d8ee27b300188ae61680711651a50b1c5ef418d442c0d1044d7ad7d2"
+      url "https://github.com/janosmiko/vau/releases/download/v0.7.4/vau_0.7.4_linux_arm64.tar.gz"
+      sha256 "ef887bc2a47a785459e8aaaead62d2f8dac27ebfea50f6b3da13da42bcccd9ab"
       define_method(:install) do
         bin.install "vau"
       end
